@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HariHara Medicals</title>
+    <!-- Core CSS - Include with every page -->
+    <link href="assets/plugins/bootstrap/bootstrap.css" rel="stylesheet" />
+    <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <link href="assets/plugins/pace/pace-theme-big-counter.css" rel="stylesheet" />
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <link href="assets/css/main-style.css" rel="stylesheet" />
+    <!-- Page-Level CSS -->
+    <link href="assets/plugins/morris/morris-0.4.3.min.css" rel="stylesheet" />
+   
+     <style>
+    #1 {
+        img {
+  border-radius: 50%;
+}}
+</style>
+ <script type="text/javascript">
+  window.onload = function () {
+    var chart = new CanvasJS.Chart("chartContainer",
+    {
+
+      title:{
+      text: "Product sales"
+      },
+       data: [
+      {
+        type: "line",
+
+        dataPoints: [
+        { x: new Date(2012, 00, 1), y: 450 },
+        { x: new Date(2012, 01, 1), y: 414 },
+        { x: new Date(2012, 02, 1), y: 520 },
+        { x: new Date(2012, 03, 1), y: 460 },
+        { x: new Date(2012, 04, 1), y: 450 },
+        { x: new Date(2012, 05, 1), y: 500 },
+        { x: new Date(2012, 06, 1), y: 480 },
+        { x: new Date(2012, 07, 1), y: 480 },
+        { x: new Date(2012, 08, 1), y: 410 },
+        { x: new Date(2012, 09, 1), y: 500 },
+        { x: new Date(2012, 10, 1), y: 480 },
+        { x: new Date(2012, 11, 1), y: 510 }
+        ]
+      }
+      ]
+    });
+
+    chart.render();
+  }
+  </script>
+ 
+ <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+
+   </head>
+<body>
+    <!--  wrapper -->
+    <div id="wrapper">
+        <!-- navbar top -->
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation" id="navbar">
+            <!-- navbar-header -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button> &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+                <a class="navbar-brand" href="index.html">
+                     <img src="assets/img/H+.png" alt="" width="30" height="200"/>&nbsp;&nbsp;<font color="navy">HARIHARA_MEDICALS</font>
+                </a>
+            </div>
+            <!-- end navbar-header -->
+            <!-- navbar-top-links -->
+            <ul class="nav navbar-top-links navbar-right">
+                <!-- main dropdown -->
+                
+               &nbsp;&nbsp;
+                <li class="dropdown">
+                        <li class="divider"></li>
+                        <li><a href="#"><i class="fa fa-cog fa-2x" aria-hidden="true"></i></a>
+                        </li>
+                   
+                        <li class="divider"></li>
+                        <li><a href="login.php"><i class="fa fa-sign-out fa-2x" aria-hidden="true"></i></a>
+                        </li>
+                    </ul>
+                    <!-- end dropdown-user -->
+                
+                <!-- end main dropdown -->
+          
+            <!-- end navbar-top-links -->
+          
+
+        </nav>
+        <!-- end navbar top -->
+
+
+        <!-- navbar side -->
+        <nav class="navbar-default navbar-static-side" role="navigation">
+            <!-- sidebar-collapse -->
+            <div class="sidebar-collapse">
+                <!-- side-menu -->
+                <ul class="nav" id="side-menu">
+                	<ul class="nav" id="side-menu">
+                    <li>
+                        <!-- user image section-->
+                        <div class="user-section">
+                            <div class="user-section-inner">
+                               
+                                <img id="1" src="assets/img/images.png" alt="Avatar" style="width:50px">
+                            </div>
+                            <div class="user-info">
+                                <div>Hari <strong>Hara</strong></div>
+                                <div class="user-text-online">
+                                    <span class="user-circle-online btn btn-success btn-circle "></span>&nbsp;Online
+                                </div>
+                            </div>
+                        </div>
+                        <!--end user image section-->
+                    </li>
+                      <li class="sidebar-search">
+                        <!-- search section-->
+                        <div class="input-group custom-search-form">
+                            <input type="text" class="form-control" placeholder="Search...">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default" type="button">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </span>
+                        </div>
+                        <!--end search section-->
+                    </li>
+                    
+                
+                   
+                    <li class="selected">
+                        <a href="index.html"><i class="fa fa-desktop fa-fw"></i> Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="banner.html"><i class="fa fa-bars" aria-hidden="true"></i> Banner</a>
+                    </li>
+                     <li>
+                        <a href="product.php"><i class="fa fa-shopping-cart fa-fw"></i> Product</a>
+                    </li>
+                    <li>
+                        <a href="order.php"><i class="fa fa-table fa-fw"></i> Order</a>
+                    </li>
+                   
+                    <li>
+                        <a href="new_admin.php"><i class="fa fa-user fa-fw"></i>+ Add new admin</a>
+                    </li>
+                    <li>
+                        <a href="prescription.php"><i class="fa fa-plus-square-o" aria-hidden="true"></i> Prescription</a>
+                    </li>
+                    <li>
+                        <a href="cust_prescription.php"><i class="fa fa-plus-square-o" aria-hidden="true"></i> Customer prescription</a>
+                    </li>
+                    <li>
+                        <a href="doctor.php"><i class="fa fa-plus fa-fw" aria-hidden="true"></i> Doctor</a>
+                    </li>
+                    <li>
+                        <a href="user.php"><i class="fa fa-user fa-fw" aria-hidden="true"></i> User</a>
+                    </li>
+                   <li>
+                        <a href="invoice_list.php"><i class="fa fa-money" aria-hidden="true"></i>  Invoice</a>
+                   </li>
+                     <li>
+                        <a href="notification.html"><i class="fa fa-bell-o" aria-hidden="true"></i> Notification</a>
+                    </li>
+                    
+                    
+                </ul>
+                <!-- end side-menu -->
+            </div>
+            <!-- end sidebar-collapse -->
+        </nav>
+        <!-- end navbar side -->
+        
+        <!--  page-wrapper -->
+        <div id="page-wrapper">
+
+            <div class="row">
+                <!-- Page Header -->
+                <div class="col-lg-12">
+                    <h1 class="page-header">Dashboard</h1>
+                    
+                </div>
+                <!--End Page Header -->
+            </div>
+            
+
+            <div class="row">
+                <!-- Welcome -->
+                <div class="col-lg-12">
+                    <div class="alert alert-info">
+                        <i class="fa fa-folder-open"></i><b>&nbsp;Hello ! </b>Welcome Back <b>Harihara </b>
+ <i class="fa  fa-pencil"></i><b>&nbsp;2,000 </b>Support Tickets Pending to Answere.
+                    </div>
+                </div>
+                <!--end  Welcome -->
+            </div>
+          <button onclick="window.location.href = 'pro.php';">UPLOAD BULK DATA</button>
+  <div class="row">
+            <div class="col-md-12 col-sm-12 ">
+              <div class="dashboard_graph">
+                  <div id="chartContainer" style="height: 200px; width: 50%;">
+  </div>
+                  
+                </div>
+                  
+
+                
+    </div>
+    <!-- end wrapper -->
+
+    <!-- Core Scripts - Include with every page -->
+    <script src="assets/plugins/jquery-1.10.2.js"></script>
+    <script src="assets/plugins/bootstrap/bootstrap.min.js"></script>
+    <script src="assets/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="assets/plugins/pace/pace.js"></script>
+    <script src="assets/scripts/siminta.js"></script>
+    <!-- Page-Level Plugin Scripts-->
+    <script src="assets/plugins/morris/raphael-2.1.0.min.js"></script>
+    <script src="assets/plugins/morris/morris.js"></script>
+    <script src="assets/scripts/dashboard-demo.js"></script>
+
+</body>
+
+</html>

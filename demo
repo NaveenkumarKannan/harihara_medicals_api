@@ -1,0 +1,40 @@
+<?
+
+if (isset($_POST['submit'])) {
+
+  $username = $_POST["username"]; // your text input name
+  $password = $_POST["password"]; // password input name
+
+
+ 
+  //insert the values
+  if (!isset($message)){
+    $result= mysql_query("INSERT INTO `db_table_name` (username, password)".
+    "VALUES ('$username', '$password')");
+    echo('Your request has been submitted successfully.');
+	
+    
+	die();
+  }
+}
+?>
+<form method=post>
+<input type=text name=username> //this will show a blank input form where you can type something to submit
+
+
+<input type=password name=password> //this is an input form designed 
+                                                         for typing password purposes
+
+<select name=select>
+<option value=yes>Yes</option>
+<option value=no>No</option>]
+</select>                                //this will enable the user to select 
+                                             a premade choice in a dropdown menu form
+
+<input type=hidden name=hidden value=whatever you want>   //this will 
+                                             enable you to include a value that will 
+                                              be hidden from the public users
+
+
+<input type=submit name=submit> // this will submit and finish the forms
+</form>
