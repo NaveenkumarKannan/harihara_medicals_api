@@ -1,5 +1,5 @@
 <?php
-require ("..\conn.php");
+require ("../conn.php");
 
 $query = mysqli_query($conn, "SELECT * FROM doctor");
 $data = array();
