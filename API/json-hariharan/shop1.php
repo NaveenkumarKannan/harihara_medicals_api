@@ -1,9 +1,5 @@
 <?php
-$servername = "localhost";
-$username = "id12184471_hariharan";
-$password = "hariharan";
-$dbname = "id12184471_hariharan_medicals";
-$conn = mysqli_connect("localhost","id12184471_hariharan","hariharan","id12184471_hariharan_medicals");
+require ("..\conn.php");
 
 
 $query = mysqli_query($conn, "SELECT * FROM shopping");
